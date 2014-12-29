@@ -55,6 +55,25 @@
           return '00:32';
   }
     });
+      
+
+  $.ajaxSetup({
+    document.write(5 + 6);
+    scriptCharset: "utf-8", //maybe "ISO-8859-1"
+    contentType: "application/json; charset=utf-8"
+});
+
+$.getJSON('http://whateverorigin.org/get?url=' + 
+    encodeURIComponent('http://google.com') + '&callback=?',
+    function(data) {
+      document.write(5 + 6);
+        console.log("> ", data);
+        //If the expected response is text/plain
+        $("#target").html(data.contents);
+        //If the expected response is JSON
+        //var response = $.parseJSON(data.contents);
+        //console.log("> ", response);
+});
       });
 </script>
 
