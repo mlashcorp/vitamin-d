@@ -1,0 +1,11 @@
+{
+  "name": "todo",
+  "private": "true",
+  "dependencies": {
+    "orbicular": "~3.0.0"
+  },
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.0-beta.14",
+    "orbicular": "~3.0.0"
+  }
+}
